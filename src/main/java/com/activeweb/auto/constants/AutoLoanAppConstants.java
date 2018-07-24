@@ -8,5 +8,6 @@ public class AutoLoanAppConstants {
 	public static final String DECISIONPAGE = "decision";
 	public static final String SIMPLELOANAPPPAGE = "simpleloanapp";
 	public static final String DELETEPAGE = "deleteapp";
+	public static final String LOANSTATUSPAGE = "loanstatus";
 	
 }

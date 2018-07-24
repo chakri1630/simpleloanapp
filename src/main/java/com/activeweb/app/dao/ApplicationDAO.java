@@ -44,10 +44,10 @@ public class ApplicationDAO {
 	public LoanApplication retrieveApplication(Integer applicationId) {
 		JdbcTemplate jdbcTemplate = new JdbcTemplate(dataSource);
 		@SuppressWarnings("unchecked")
-		List<LoanApplication> apps = (List<LoanApplication>) jdbcTemplate.queryForObject(
+		LoanApplication application = (LoanApplication) jdbcTemplate.queryForObject(
 				"SELECT * FROM APPLICATION where applicationId=?", new Object[] { applicationId },
 				new LoanApplicationRowMapper());
-		return apps.get(0);
+		return application;
 	}
 
 	public Integer retrieveLoanApplicationPerUser(LoanApplication application) {

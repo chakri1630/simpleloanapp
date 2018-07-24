@@ -46,7 +46,6 @@ public class HomeController {
 
 		logger.info("Decision handler is called..");
 
-		
 		//ModelAndView modelAndView = new ModelAndView();
 		
 		if(loanID.equals("1212")) {

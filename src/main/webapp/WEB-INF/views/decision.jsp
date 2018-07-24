@@ -12,7 +12,7 @@
 	
 	<jsp:include page="navbar.jsp"/>
 
-	Application Deleted/Closed : ${application_status}
+	Application : ${application_status}
 
 </div>
 
